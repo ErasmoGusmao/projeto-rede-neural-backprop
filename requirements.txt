@@ -1,0 +1,11 @@
+# Ambiente do projeto — criar e instalar com:
+#   python -m venv .venv
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+networkx==3.6.1
+pandas==3.0.6
+ipykernel==7.3.0
+torch==2.14.0+cpu
