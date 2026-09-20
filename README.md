@@ -29,14 +29,16 @@ notebooks/exemplos_aula/
 figuras/
   grafos/                                 grafos computacionais do baseline e da rede proposta
   exemplos/                               grafos computacionais dos exemplos 1 a 3
-  fig_dataset.svg                         base de dados make_circles
 scripts/                                  geradores dos grafos (networkx + matplotlib)
 resultados/                               tabela consolidada dos experimentos da seção 8
 requirements.txt                          ambiente Python
 ```
 
-Os grafos de `figuras/` são gerados pelos scripts de `scripts/`; cada script grava PNG e SVG na
-pasta correspondente. O notebook referencia as figuras por caminho relativo à raiz do projeto.
+Os grafos do baseline, da rede proposta e dos exemplos 2 e 3 são gerados pelos scripts de
+`scripts/`; cada script grava PNG e SVG na pasta correspondente. O grafo do exemplo 1 é uma
+imagem estática. No notebook de entrega os grafos são exibidos com `IPython.display.Image` a
+partir de `figuras/grafos/`, com a saída salva no próprio arquivo, para que apareçam também na
+visualização do GitHub, que não resolve caminhos relativos em células markdown.
 
 ## Ambiente
 

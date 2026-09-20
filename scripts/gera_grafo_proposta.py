@@ -22,20 +22,19 @@ Forward (`forward`), neurônio oculto i = 0..3:
 Backward (`backward`), na ordem inversa:
 
     grad_L  = 1
-    grad_e  = grad_L * e                         # (1)
-    grad_y2 = grad_e                             # (2)
-    grad_v2 = grad_y2 * y2 * (1 - y2)            # (3)
-    grad_b2[0] = grad_v2                         # (4)
+    grad_e  = grad_L * e
+    grad_y2 = grad_e
+    grad_v2 = grad_y2 * y2 * (1 - y2)
+    grad_b2[0] = grad_v2
     para cada i:
-        grad_s2_i     = grad_v2                  #     a soma repassa o gradiente
-        grad_W2[i]    = grad_s2_i * y1_i         # (4)
-        grad_y1_i     = grad_s2_i * W2[i]        # (5)
-        grad_v1_i     = grad_y1_i * (1 - y1_i**2)# (6)
-        grad_b1[i]    = grad_v1_i                # (7)
+        grad_s2_i     = grad_v2                  # a soma repassa o gradiente
+        grad_W2[i]    = grad_s2_i * y1_i
+        grad_y1_i     = grad_s2_i * W2[i]
+        grad_v1_i     = grad_y1_i * (1 - y1_i**2)
+        grad_b1[i]    = grad_v1_i
         grad_s1_i0    = grad_v1_i ;  grad_s1_i1 = grad_v1_i
-        grad_W1[i, 0] = grad_s1_i0 * x[0]        # (7)
-        grad_W1[i, 1] = grad_s1_i1 * x[1]        # (7)
-
+        grad_W1[i, 0] = grad_s1_i0 * x[0]
+        grad_W1[i, 1] = grad_s1_i1 * x[1]
 Convenções (as mesmas de gera_grafo_baseline.py e gera_grafo_exemplo03.py):
   - nó redondo       = variável de entrada ou parâmetro
   - nó retangular    = operação elementar
