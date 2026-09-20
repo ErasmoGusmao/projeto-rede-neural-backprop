@@ -14,7 +14,7 @@ Decompostas nas operações elementares do `df` do exemplo02.ipynb:
     s02 = w0 + s00 + s01 - y0
     L   = s02**2
 
-Convenções (seção 2.4 do notebook do projeto):
+Convenções (as mesmas dos grafos do notebook do projeto):
   - nó redondo     = variável de entrada ou parâmetro
   - nó retangular  = operação elementar
   - rótulo preto   = nome da variável do código (fluxo direto)

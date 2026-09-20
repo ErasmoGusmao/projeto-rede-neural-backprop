@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Grafo computacional da rede proposta (seção 7 do notebook): 2 -> 4 -> 1, tanh na camada
+Grafo computacional da rede proposta (seção 6 do notebook): 2 -> 4 -> 1, tanh na camada
 oculta e sigmoide na saída, perda L = 0.5 * e**2.
 
 Os nomes dos nós e das arestas são exatamente os do esqueleto das funções `forward` e
-`backward` da seção 7 (parâmetros no dicionário `params`: W1 (4, 2), b1 (4,), W2 (4,), b2 (1,)).
+`backward` das seções 6.4 e 6.5 (parâmetros no dicionário `params`: W1 (4, 2), b1 (4,), W2 (4,), b2 (1,)).
 
 Forward (`forward`), neurônio oculto i = 0..3:
 
@@ -19,7 +19,7 @@ Forward (`forward`), neurônio oculto i = 0..3:
     e     = y2 - d
     L     = 0.5 * e**2
 
-Backward (`backward`), na ordem inversa (equações (1) a (7) da seção 2.5):
+Backward (`backward`), na ordem inversa:
 
     grad_L  = 1
     grad_e  = grad_L * e                         # (1)
@@ -43,8 +43,8 @@ Convenções (as mesmas de gera_grafo_baseline.py e gera_grafo_exemplo03.py):
   - rótulo vermelho  = gradiente que retropropaga por aquela aresta
 
 Gera, em figuras/grafos/:
-  grafo_proposta_2-4-1_forward.{png,svg}   -> grafo 2 da seção 2.4 (só o forward)
-  grafo_proposta_2-4-1_backward.{png,svg}  -> grafo 3 da seção 2.4 (backward anotado)
+  grafo_proposta_2-4-1_forward.{png,svg}   -> só o forward (não usado no notebook)
+  grafo_proposta_2-4-1_backward.{png,svg}  -> seção 6.3 do notebook (backward anotado)
 """
 from pathlib import Path
 

@@ -3,7 +3,7 @@
 Projeto final da disciplina Matemática para Ciência de Dados (Especialização em Deep Learning,
 CIn/UFPE). Implementa uma rede neural 2 → 4 → 1 com propagação direta e retropropagação escritas
 à mão, operação por operação, a partir do `exemplo4.py` da Aula 04 (21/08/2026), e valida os
-gradientes por diferenças finitas e contra o `autograd` do PyTorch. Entrega em 26/09/2026.
+gradientes contra o `autograd` do PyTorch. Entrega em 26/09/2026.
 
 ## Decisões de projeto
 
@@ -31,7 +31,7 @@ figuras/
   exemplos/                               grafos computacionais dos exemplos 1 a 3
   fig_dataset.svg                         base de dados make_circles
 scripts/                                  geradores dos grafos (networkx + matplotlib)
-resultados/                               tabela consolidada dos experimentos da seção 10
+resultados/                               tabela consolidada dos experimentos da seção 8
 requirements.txt                          ambiente Python
 ```
 
@@ -52,5 +52,5 @@ Os grafos não dependem do Graphviz.
 
 ## Execução
 
-Abrir `projeto_rede_neural.ipynb` e executar todas as células em ordem. A seção 10
+Abrir `projeto_rede_neural.ipynb` e executar todas as células em ordem. A seção 8
 (varredura de arquiteturas, ativações e taxas de aprendizado em PyTorch) leva alguns minutos em CPU.

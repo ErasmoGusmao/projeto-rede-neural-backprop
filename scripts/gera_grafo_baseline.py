@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Grafo computacional do baseline (seção 6 do notebook): rede 2 -> 2 -> 1 com sigmoide
+Grafo computacional do baseline (seção 5 do notebook): rede 2 -> 2 -> 1 com sigmoide
 em todas as camadas, reprodução do exemplo4.py do professor.
 
 O desenho segue, operação por operação, as funções `forward_baseline` e
-`backward_baseline` da seção 6 do notebook — e não o exemplo4.py original. A diferença
+`backward_baseline` da seção 5 do notebook — e não o exemplo4.py original. A diferença
 é que a soma de cada neurônio é feita numa única operação (v0 = s00 + s01 + b0[0]),
 sem os nós intermediários s02/s12/s22 do script do professor.
 

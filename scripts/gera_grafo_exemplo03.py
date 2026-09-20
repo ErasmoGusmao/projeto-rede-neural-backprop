@@ -26,7 +26,7 @@ E o backward, na ordem inversa:
     grad_w0 = grad_y
     grad_w1 = grad_s0 * x0    grad_w2 = grad_s1 * x1
 
-Convenções (seção 2.4 do notebook do projeto):
+Convenções (as mesmas dos grafos do notebook do projeto):
   - nó redondo       = variável de entrada ou parâmetro
   - nó retangular    = operação elementar
   - rótulo preto     = nome da variável do código (fluxo direto)

@@ -5,10 +5,6 @@ __pycache__/
 .venv/
 venv/
 
-# saídas geradas ao executar o notebook de entrega na raiz
-/fig_dataset.svg
-/resultados_experimentos.csv
-
 # sistema
 .DS_Store
 Thumbs.db
